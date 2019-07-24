@@ -44,7 +44,7 @@ declare global {
   namespace Cypress {
     // tslint:disable-next-line:interface-name
     interface Chainable<Subject> {
-      google: typeof google;
+      google(): Chainable<Subject>;
       navigate(pageName: string): void
     }
   }

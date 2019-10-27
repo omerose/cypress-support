@@ -1,4 +1,5 @@
 describe('Sample Cypress setup', () => {
+
   it('should go to Google using a command', () => {
     cy.google();
   });

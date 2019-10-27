@@ -1,3 +1,16 @@
+
+// Must be declared global to be detected by typescript (allows import/export)
+// eslint-disable @typescript/interface-name
+declare global {
+  // eslint-disable-next-line @typescript-eslint/no-namespace
+  namespace Cypress {
+    interface Chainable<Subject> {
+      google(): Chainable<Window>;
+      navigate(pageName: string): void;
+    }
+  }
+}
+
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -36,19 +49,7 @@ Cypress.Commands.add('navigate', (pageName) => {
   // Find navigation menu item
   // Click on it
   cy.visit(`/${pageName}`)
-})
-
-// Must be declared global to be detected by typescript (allows import/export)
-// tslint:disable-next-line:no-namespace
-declare global {
-  namespace Cypress {
-    // tslint:disable-next-line:interface-name
-    interface Chainable<Subject> {
-      google: typeof google;
-      navigate(pageName: string): void
-    }
-  }
-}
+});
 
 // Convert this to a module instead of script (allows import/export)
 export {}

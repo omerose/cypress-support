@@ -9,16 +9,16 @@
     "lint": "npx eslint --ext .ts,.js ."
   },
   "devDependencies": {
-    "@babel/core": "7.4.5",
-    "@babel/preset-env": "7.4.5",
-    "@bahmutov/add-typescript-to-cypress": "2.1.1",
-    "@typescript-eslint/eslint-plugin": "^2.5.0",
-    "@typescript-eslint/parser": "^2.5.0",
+    "@babel/core": "7.6.4",
+    "@babel/preset-env": "7.6.3",
+    "@bahmutov/add-typescript-to-cypress": "2.1.2",
+    "@typescript-eslint/eslint-plugin": "2.6.0",
+    "@typescript-eslint/parser": "2.6.0",
     "babel-loader": "8.0.6",
-    "cypress": "3.3.1",
-    "eslint": "^6.5.1",
-    "eslint-plugin-cypress": "^2.7.0",
-    "typescript": "3.5.1",
-    "webpack": "4.33.0"
+    "cypress": "3.6.0",
+    "eslint": "6.6.0",
+    "eslint-plugin-cypress": "2.7.0",
+    "typescript": "3.6.4",
+    "webpack": "4.41.2"
   }
 }

@@ -1,5 +1,5 @@
 ## What is this?
-This is a simple repo demonstrating how to setup typescript with cypress:
+This is a simple repo demonstrating how to setup typescript and eslint with cypress:
  - 2 Example Commands are typed
  - All tsconfig and other config files are setup
  - Added script shortcuts as recommended from DOCS

@@ -1,4 +1,4 @@
-import wp from '@cypress/webpack-preprocessor'
+const wp = require('@cypress/webpack-preprocessor')
 
 const webpackOptions = {
   resolve: {

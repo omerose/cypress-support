@@ -1,16 +1,3 @@
-
-// Must be declared global to be detected by typescript (allows import/export)
-// eslint-disable @typescript/interface-name
-declare global {
-  // eslint-disable-next-line @typescript-eslint/no-namespace
-  namespace Cypress {
-    interface Chainable<Subject> {
-      google(): Chainable<Window>;
-      navigate(pageName: string): void;
-    }
-  }
-}
-
 // ***********************************************
 // This example commands.js shows you how to
 // create various custom commands and overwrite
@@ -36,6 +23,18 @@ declare global {
 //
 // -- This is will overwrite an existing command --
 // Cypress.Commands.overwrite("visit", (originalFn, url, options) => { ... })
+
+// Must be declared global to be detected by typescript (allows import/export)
+// eslint-disable @typescript/interface-name
+declare global {
+  // eslint-disable-next-line @typescript-eslint/no-namespace
+  namespace Cypress {
+    interface Chainable<Subject> {
+      google(): Chainable<Window>;
+      navigate(pageName: string): void;
+    }
+  }
+}
 
 /**
  * Goes to google site

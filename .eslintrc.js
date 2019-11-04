@@ -1,6 +1,13 @@
 module.exports = {
-  parser: '@typescript-eslint/parser',  // Specifies the ESLint parser
+  parser: '@typescript-eslint/parser',
   plugins: ["@typescript-eslint", "cypress", "prettier"],
+  settings: {
+    "import/resolver" : {
+      "node" : {
+        "extensions" : [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
   extends: [
     'plugin:@typescript-eslint/recommended',  // Uses the recommended rules from the @typescript-eslint/eslint-plugin
     'plugin:cypress/recommended',

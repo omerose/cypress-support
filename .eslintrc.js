@@ -56,10 +56,6 @@ module.exports = {
         "ignoreProperties": true,
         "ignoreParameters": true
       }
-    ],
-    "@typescript-eslint/interface-name-prefix": [
-      "error",
-      "always"
-    ],
+    ]
   }
 }

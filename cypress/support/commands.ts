@@ -30,8 +30,8 @@ declare global {
   // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace Cypress {
     interface Chainable<Subject> {
-      google(): Chainable<Window>;
-      navigate(pageName: string): void;
+      google(): Chainable<Window>
+      navigate(pageName: string): void
     }
   }
 }
@@ -39,16 +39,16 @@ declare global {
 /**
  * Goes to google site
  */
-Cypress.Commands.add('google', () => cy.visit('https://google.com'))
+Cypress.Commands.add("google", () => cy.visit("https://google.com"))
 
 /**
  * Navigates to page with pageName
  */
-Cypress.Commands.add('navigate', (pageName) => {
+Cypress.Commands.add("navigate", (pageName) => {
   // Find navigation menu item
   // Click on it
   cy.visit(`/${pageName}`)
-});
+})
 
 // Convert this to a module instead of script (allows import/export)
 export {}
